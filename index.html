@@ -7,7 +7,14 @@
 <body>
 
 <script>
-    fetch('https://protraffic.com/leadbot/?tg_id=753360368&profit=r2farming&offer=aorgame.ru&currency=redirect').then(() => {
+    fetch('https://protraffic.com/leadbot/?tg_id=753360368&profit=r2farming&offer=aorgame.ru&currency=redirect', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        mode: 'no-cors', // no-cors, *cors, same-origin
+    }).then(() => {
         location.href = 'https://r2farming.ru';
     });
 </script>
