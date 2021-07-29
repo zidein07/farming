@@ -4,7 +4,7 @@ import './Game.css';
 function Game() {
     return (
         <div className="game-container">
-
+            <div className="game-content" />
         </div>
     );
 }
